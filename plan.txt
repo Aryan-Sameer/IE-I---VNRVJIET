@@ -1,0 +1,29 @@
+home page
+  |_ hero
+    |_navbar
+  |_ about
+  |_ achievements
+  |_ latest news
+  |_ gallery
+
+event page
+  |_ navbar
+  |_ events
+  |_ impulse link
+
+registrations page
+  |_ navbar
+  |_ iei memebrship
+  |_ iei events
+
+contact
+  |_ footer
+
+* clean the code (make it minimalistic)
+* use utility classes
+* get the dynamic content from JSON fromat
+
+Static - navbar, hero, about, footer
+dynamic - events, news, gallery, registrations
+
+responsie - registrations, footer, events, navbar, 

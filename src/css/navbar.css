@@ -1,0 +1,102 @@
+.nav,
+.navOnScroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 8px 40px;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.navOnScroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px 1px rgba(55, 55, 55, 0.101);
+    transition: 0.2s ease;
+}
+
+.activePage {
+    background-image: linear-gradient(transparent, rgb(240, 240, 240));
+}
+
+.navTitle {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+}
+
+.navTitle img {
+    height: 35px;
+    vertical-align: middle;
+}
+
+
+.navTitle h3 {
+    font-weight: bold;
+    margin: 0;
+    color: #82001a;
+}
+
+.navLinks ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    align-self: flex-end;
+}
+
+.navLinks ul li {
+    font-size: 22px;
+    color: black;
+    padding: 3px 8px;
+}
+
+.navLinks ul li:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    color: black;
+}
+
+@media (max-width: 1015px){
+    .nav, .navOnScroll{
+        display: block;
+    }
+    .navLinks ul{
+        justify-content: space-between;
+        overflow-x: auto;
+        padding: 10px 0px;
+    }
+    .navLinks ul li{
+        padding: 3px 0px;
+    }
+    .navTitle{
+        justify-content: center;
+    }
+}
+@media (max-width: 700px){
+    .navLinks ul li{
+        padding: 3px 0px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 650px){
+    .nav, .navOnScroll{
+        padding: 20px 30px 8px;
+    }
+    .navLinks ul{
+        padding: 5px 0px;
+        gap: 20px;
+    }
+    .navLinks ul li{
+        padding: 3px 0px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,177 @@
+footer {
+    display: flex;
+}
+
+.leftFoot,
+.rightFoot {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.leftFoot {
+    flex-direction: column;
+    width: 40%;
+    background-color: rgb(37, 37, 37);
+}
+
+.leftFoot p {
+    margin: 10px 0px;
+}
+
+.locationBtn {
+    width: max-content;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: 0.2s ease;
+}
+
+.locationBtn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.locationBtn a .locationRkt {
+    color: white;
+}
+
+
+.locationBtn:hover>a .locationRkt {
+    color: rgb(104, 0, 21);
+}
+
+.locationBtn:hover>a {
+    color: black;
+}
+
+.locationBtn:hover {
+    background-color: white;
+}
+
+.mailId {
+    font-size: 24px;
+}
+
+.sendMail{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.859);
+    text-decoration: none;
+}
+
+.sendMail:hover{
+    color: white;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.social a {
+    color: rgba(255, 255, 255, 0.859);
+}
+
+.social a:hover {
+    color: white;
+}
+
+.rightFoot {
+    width: 60%;
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.rightFoot img{
+    width: 20%;
+    height: min-content;
+}
+
+.copy {
+    color: white;
+    font-size: 12px;
+    padding: 8px 40px;
+    background-color: #82001a;
+    display: flex;
+    gap: 3%;
+}
+.copy p{
+    margin: 0;
+}
+
+@media (max-width: 900px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightFoot {
+        width: 100%;
+    }
+    .leftFoot {
+        width: 100%;
+    }
+    .leftFoot{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .mailId p{
+        margin: 0;
+    }
+    .locationBtn{
+        width: 100%;
+    }
+    .left2{
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 700px){
+    .copy{
+        gap: 2%;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    .leftFoot, .rightFoot{
+        padding: 30px;
+        flex-direction: column;
+    }
+    .rightFoot img{
+        width: 25%;
+        height: min-content;
+    }
+    .social {
+        font-size: 24px;
+    }
+    .copy{
+        gap: 1%;
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+    .left2{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 436px){
+    .leftFoot{
+        flex-direction: column;
+    }
+    .social {
+        font-size: 22px;
+    } 
+    .leftFoot, .rightFoot{
+        padding: 25px;
+    }
+    .copy{
+        gap: 1%;
+        font-size: 8px;
+    }
+}
