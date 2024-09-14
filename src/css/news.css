@@ -22,7 +22,7 @@
     height: min-content;
     background-color: white;
     box-shadow: 0px 0px 4px 4px rgba(83, 83, 83, 0.038);
-    border-radius: 0px 0px 7px 7px;
+    border-radius: 7px;
 }
 
 .latestNews img {
@@ -117,28 +117,21 @@
 
 @media (max-width: 1400px) {
     .previousNews {
-        max-height: 55vh;
+        max-height: 50vh;
+    }
+}
+@media (max-width: 1250px) {
+    .newsCanvas{
+        gap: 45px;
+        padding: 30px 40px;
     }
 }
 
-@media (max-width: 1200px) {
-    .previousNews {
-        max-height: 55vh;
-    }
-
-    .oldNews p {
-        font-size: 14px;
-    }
-
-    .oldNews img {
-        width: 35%;
-    }
-}
-
-@media (max-width: 980px) {
+@media (max-width: 1030px) {
     .newsCanvas {
         flex-direction: column;
-        gap: 40px;
+        gap: 35px;
+        padding: 30px 35px;
     }
 
     .latestNews {
@@ -162,16 +155,30 @@
     .previousNews {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .oldNews {
+        flex-direction: column
+    }
+    .oldNews img {
+        width: 100%;
     }
 
     .oldNews p {
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .oldDetail{
+        width: 100%;
     }
 }
 
 @media (max-width: 760px) {
+    .newsCanvas {
+        padding: 30px;
+    }
+    
     .previousNews {
         grid-template-columns: 1fr;
     }
@@ -188,27 +195,39 @@
     .detail {
         padding: 5px;
     }
+    .oldNews {
+        flex-direction: row;
+    }
+    .oldNews img{
+        width: 40%;
+    }
 }
 
 @media (max-width: 600px) {
     .newsCanvas {
-        padding: 30px;
+        padding: 20px;
     }
 }
 
 @media (max-width: 576px) {
+    .latestNews p{
+        font-size: 12px;
+    }
     .newsPaper {
-        padding: 30px;
+        padding: 20px;
     }
 }
 
 @media (max-width: 500px) {
     .newsCanvas {
-        padding: 20px;
+        padding: 10px;
         gap: 20px;
     }
 
     .oldDetail h5 {
         font-size: 16px;
+    }
+    .oldDetail p {
+        font-size: 10px;
     }
 }

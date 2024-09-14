@@ -60,7 +60,7 @@ const Gallery = () => {
     <main id='gallery' className='gallery'>
       <h2 className='headings'>Gallery</h2>
 
-      <div className='collectioon'>
+      <div className='collection'>
 
         <div className="imageAlbum">
 

@@ -17,8 +17,8 @@ const Footer = () => {
             <footer id='footer'>
 
                 <div className="rightFoot">
-                    <img style={{ borderRadius: "50%" }} src="/static/ieiofficialLogo.png" alt="" />
-                    <div className="testiomonial">
+                    <a target='_blank' href="https://www.ieindia.org/WebUI/iei-home.aspx"><img style={{ borderRadius: "50%" }} src="/static/ieiofficialLogo.png" alt="" /></a>
+                    <div className="ieiKolkata">
                         <p>The Institution of Engineers (India) is India's national engineers organization.</p>
                         <p>It is a non-profit organization, established in 1920, with its headquarters in Kolkata, India.</p>
                         <p>It is recognized as a statutory body to promote and advance engineering and technology.</p>

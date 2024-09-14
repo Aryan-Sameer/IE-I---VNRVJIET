@@ -138,7 +138,7 @@ hr {
 }
 
 .aboutInfo p {
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 .aboutImg {
@@ -153,15 +153,24 @@ hr {
 .ourTeamBtn{
     justify-self: flex-start;
     background-color: #fff;
-    border: none;
+    margin: 10px 0px;
+    padding: 2px 10px;
     display: flex;
     align-items: baseline;
     font-size: 18px;
+    border: none;
+    background-color: rgb(241, 241, 241);
+    transition: 0.3s ease;
+    border-radius: 7px;
 }
 
 .teamArrow{
     font-size: 22px;
     transition: 0.3s ease;
+}
+
+.ourTeamBtn:hover{
+    border-radius: 0px 20px 20px 0px;
 }
 
 .ourTeamBtn:hover > .teamArrow{
@@ -196,10 +205,13 @@ hr {
 /* hero mediaquery */
 
 @media (max-width: 1015px){
+    .hero{
+        height: max-content;
+    }
     .welcome{
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: fit-content;
-        justify-content: space-around;
+        padding: 30px 0px;
     }
     .intro{
         width: 100%;
@@ -211,49 +223,38 @@ hr {
         width: 25%;
     }
 }
-@media (max-width: 908px){
-    .ieiLogo img{
-        width: 30%;
-    }
-}
+
 @media (max-width: 760px){
+    .hero{
+        margin: 30px;
+    }
     .ieiLogo img{
         width: 35%;
     }
     .intro{
-        padding: 50px 40px;
+        padding: 30px;
     }
 }
-@media (max-width: 660px){
-    .ieiLogo img{
-        width: 40%;
-    }
-}
+
 @media (max-width: 576px){
-    .ieiLogo img{
-        width: 50%;
-    }
+
     .intro h2{
-        font-size: 18px;
+        font-size: 20px;
     }
     .intro h1{
-        font-size: 26px;
+        font-size: 28px;
     }
     .hero{
         margin: 20px;
     }
-    .welcome{
-        justify-content: space-around;
-        gap: 50px;
+    .intro{
+        padding: 20px;
     }
     .explore{
         font-size: 14px;
     }
 }
 @media (max-width: 428px){
-    .ieiLogo img{
-        width: 70%;
-    }
     .intro h2{
         font-size: 16px;
     }
@@ -265,6 +266,9 @@ hr {
 /* about us mediaquery */
 
 @media (max-width: 1100px){
+    .aboutUs{
+        height: max-content;
+    }
     .aboutInfo{
         width: 55%;
         text-align: justify;
@@ -298,8 +302,6 @@ hr {
     .aboutUs{
         flex-direction: column;
         padding: 40px;
-        height: 100vh;
-        justify-content: flex-end;
     }
     .aboutInfo{
         width: 100%;
@@ -308,10 +310,6 @@ hr {
     .aboutImg{
         width: 100%;
     }
-    .aboutImg img, .stats{
-        width: 50%;
-        margin: 0 auto;
-    }
     .stats h2{
         font-size: 26px;
     }
@@ -319,19 +317,26 @@ hr {
         font-size: 12px;
     }
     .aboutImg img, .stats{
+        margin: 0 auto;
         width: 60%;
+    }
+    .ourTeamBtn{
+        font-size: 14px;
+    }
+    .teamArrow{
+        font-size: 18px;
     }
 }
 
 @media (max-width: 660px){
     .aboutImg img, .stats{
-        width: 80%;
+        width: 85%;
     }
 }
 
 @media (max-width: 436px){
     .aboutUs{
-        padding: 40px 25px;
+        padding: 40px 20px;
         gap: 15px;
     }
     .stats, .aboutImg img{

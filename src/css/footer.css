@@ -89,8 +89,13 @@ footer {
 }
 
 .rightFoot img{
-    width: 20%;
+    width: 100%;
     height: min-content;
+}
+
+.rightFoot a{
+    height: min-content;
+    border-radius: 50%;
 }
 
 .copy {
@@ -105,7 +110,7 @@ footer {
     margin: 0;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1030px){
     footer{
         display: flex;
         flex-direction: column;
@@ -132,15 +137,19 @@ footer {
 }
 
 @media (max-width: 700px){
+    .leftFoot, .rightFoot{
+        padding: 30px;
+    }
     .copy{
         gap: 2%;
         font-size: 10px;
+        padding: 10px 30px;
     }
 }
 
 @media (max-width: 576px){
     .leftFoot, .rightFoot{
-        padding: 30px;
+        padding: 20px;
         flex-direction: column;
     }
     .rightFoot img{
@@ -152,8 +161,8 @@ footer {
     }
     .copy{
         gap: 1%;
-        font-size: 10px;
-        padding: 10px 30px;
+        font-size: 9px;
+        padding: 10px 20px;
     }
     .left2{
         margin: 0px;
@@ -168,10 +177,10 @@ footer {
         font-size: 22px;
     } 
     .leftFoot, .rightFoot{
-        padding: 25px;
+        padding: 15px;
     }
     .copy{
-        gap: 1%;
+        padding: 15px;
         font-size: 8px;
     }
 }
