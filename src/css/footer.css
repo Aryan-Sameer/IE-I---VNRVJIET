@@ -95,6 +95,7 @@ footer {
 
 .rightFoot a{
     height: min-content;
+    width : min-content;
     border-radius: 50%;
 }
 
