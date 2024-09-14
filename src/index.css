@@ -212,6 +212,7 @@ hr {
         flex-direction: column-reverse;
         height: fit-content;
         padding: 40px 0px;
+        gap: 20px;
     }
     .intro{
         width: 100%;

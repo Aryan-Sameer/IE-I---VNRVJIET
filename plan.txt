@@ -20,10 +20,10 @@ contact
   |_ footer
 
 * clean the code (make it minimalistic)
-* use utility classes
-* get the dynamic content from JSON fromat
+* use css variables
+* make the font sizes uniform thorought all the elements
+* add blog section
+* add a cms
 
 Static - navbar, hero, about, footer
 dynamic - events, news, gallery, registrations
-
-responsie - registrations, footer, events, navbar, 
