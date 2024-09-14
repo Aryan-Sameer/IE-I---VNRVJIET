@@ -115,7 +115,7 @@ const Team = () => {
             image: "http://placehold.it/150x150",
             name: "P Y Venkata Sai Teja",
             position: "Executive Head",
-            email: "mail id of member"
+            email: "venkatasai0204@gmail.com"
         },
     ]
 
