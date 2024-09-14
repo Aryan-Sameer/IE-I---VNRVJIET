@@ -52,7 +52,7 @@ const Team = () => {
             image: "http://placehold.it/150x150",
             name: "Srinidh Reddy",
             position: "Treasurer",
-            email: "mail id of member"
+            email: "srinidh264@gmail.com"
         },
         {
             id: 8,
@@ -73,7 +73,7 @@ const Team = () => {
             image: "http://placehold.it/150x150",
             name: "R Dhawan Kumar",
             position: "Design Head",
-            email: "mail id of member"
+            email: "dhawanxxx22@gmail.com"
         },
         {
             id: 11,
@@ -94,7 +94,7 @@ const Team = () => {
             image: "http://placehold.it/150x150",
             name: "Mamidi Supriya",
             position: "Social Media Coordinator",
-            email: "mail id of member"
+            email: "mamidisupriya293@gmail.com"
         },
         {
             id: 14,
@@ -108,7 +108,7 @@ const Team = () => {
             image: "http://placehold.it/150x150",
             name: "G Thirumal Chowdary",
             position: "Head Alumni Connect",
-            email: "mail id of member"
+            email: "thirumalg98@gmail.com"
         },
         {
             id: 16,

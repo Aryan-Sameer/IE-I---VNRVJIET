@@ -19,9 +19,10 @@ registrations page
 contact
   |_ footer
 
-* clean the code (make it minimalistic)
-* use css variables
+* fix the team and iei official link btns
 * make the font sizes uniform thorought all the elements
+* use css variables
+* clean the code (make it minimalistic)
 * add blog section
 * add a cms
 
