@@ -221,7 +221,7 @@ hr {
         width: 100%;
     }
     .ieiLogo img{
-        width: 25%;
+        width: 30%;
     }
 }
 
@@ -253,6 +253,9 @@ hr {
     }
     .explore{
         font-size: 14px;
+    }
+    .ieiLogo img{
+        width: 40%;
     }
 }
 @media (max-width: 428px){
