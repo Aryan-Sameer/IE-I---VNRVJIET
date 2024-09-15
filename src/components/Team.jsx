@@ -48,7 +48,7 @@ const Team = () => {
         },
         {
             id: 7,
-            image: "http://placehold.it/150x150",
+            image: "public/static/core team/srinidh.jpg",
             name: "Srinidh Reddy",
             position: "Treasurer",
             email: "srinidh264@gmail.com"
