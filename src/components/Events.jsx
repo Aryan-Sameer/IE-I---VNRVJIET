@@ -98,7 +98,7 @@ const Events = () => {
             id: 2,
             image: "/dynamic/IEI Events/Other events/ipl auction.jpg",
             title: "Mock IPL Auction",
-            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, laudantium at nostrum saepe dolorem, eaque obcaecati ex eveniet quo ratione molestias voluptatibus sint magni tempora quam sit praesentium! Totam, accusantium!"
+            description: "The Mock IPL Auction on March 19th, 2024, from 2:40 PM to 4:40 PM, invites teams of 4 to 5 members to act as IPL team managers, bidding for players in a simulated auction. This event offers a hands-on experience in team management and strategy."
         },
         {
             id: 3,
