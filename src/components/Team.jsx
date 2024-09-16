@@ -48,7 +48,7 @@ const Team = () => {
         },
         {
             id: 7,
-            image: "public/static/core team/srinidh.jpg",
+            image: "/static/core team/srinidh.jpg",
             name: "Srinidh Reddy",
             position: "Treasurer",
             email: "srinidh264@gmail.com"
