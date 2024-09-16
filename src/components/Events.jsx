@@ -8,19 +8,19 @@ const Events = () => {
             id: 1,
             image: "/dynamic/IEI Events/Convergence pics/Hardware Hackathon.jpg",
             title: "Hardware Hackathon",
-            description: ""
+            description: "The Hardware Hackathon, part of CONVERGENCE, took place on December 14th and 15th at VNR VJIET. Participants collaborated to develop innovative hardware solutions to real-world problems, with guidance from expert mentors. The event encouraged creativity and teamwork, offering students a platform to showcase their technical skills."
         },
         {
             id: 2,
             image: "/dynamic/IEI Events/Convergence pics/Blogathon.jpeg",
             title: "Blogathon",
-            description: ""
+            description: "The Blogathon, held on December 14th and 15th, brought together participants to write engaging blogs on tech-related topics within a set time frame. The competition focused on enhancing creativity and communication skills, offering students a platform to express their knowledge and insights through writing."
         },
         {
             id: 3,
             image: "/dynamic/IEI Events/Convergence pics/model based design.jpeg",
             title: "Model Based Design",
-            description: ""
+            description: "The Model-Based Design workshop, held on December 14th and 15th, was conducted by Mr. P. Ramesh, Assistant Professor from the EEE Department. The workshop covered MATLAB programming, Simulink design, and controller development, providing valuable insights into algorithm development and Simscape electronics."
         },
     ]
 
@@ -145,7 +145,7 @@ const Events = () => {
                             <div key={item.id} className='card'>
                                 <img className='eventPoster' src={item.image} alt="" />
                                 <h5 className='eventTitle'>{item.title}</h5>
-                                <p className='eventDesc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, perferendis?</p>
+                                <p className='eventDesc'>{item.description}</p>
                             </div>
                         )
                     })}
