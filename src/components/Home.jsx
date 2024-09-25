@@ -8,6 +8,12 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
 
+    const announcements = [
+        "The registrations are open for 1st and 2nd year students",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusamus?",
+        "Lorem ipsum dolor sit amet consectetur.",
+    ]
+
     const handleExplore = () => {
         const about = document.getElementById("about")
         about.scrollIntoView({ behavior: "smooth" })
@@ -70,16 +76,18 @@ const Home = () => {
                 </div>
             </div>
 
-            <fieldset className="announcements">
+            {announcements.length != 0 && <fieldset className="announcements">
                 <div className="content">
                     <legend>Announcements</legend>
                     <ul>
-                        <li>The registrations are open for 1st and 2nd year students</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusamus?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        {announcements.map((item) => {
+                            return (
+                                <li>{item}</li>
+                            )
+                        })}
                     </ul>
                 </div>
-            </fieldset>
+            </fieldset>}
 
             <News />
             <Gallery />
