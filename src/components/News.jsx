@@ -6,36 +6,33 @@ const News = () => {
     let latestNews = [
         {
             image: "http://placehold.it/250x150&text=Recent_News",
-            headline: "this is the latest news.",
+            headline: "this is latest news",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam iusto maxime doloribus quas ut consequuntur mollitia natus vel. Animi, quisquam reiciendis.",
-            date: "25 / 08 / 2024",
+            date: "17 / 09 / 2024",
+        },
+        {
+            image: "http://placehold.it/250x150&text=Recent_News",
+            headline: "old news 1",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam iusto maxime doloribus quas ut consequuntur mollitia natus vel. Animi, quisquam reiciendis. Aliquid, sed architecto.",
+            date: "17 / 09 / 2024",
         },
         {
             image: "http://placehold.it/240x180&text=old_news_1",
-            headline: "old news 1.",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam iusto maxime doloribus quas ut consequuntur mollitia natus vel. Animi, quisquam reiciendis. Aliquid, sed architecto.",
-            date: "23 / 08 / 2024",
+            headline: "old news 2",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam iusto maxime doloribus quas ut consequuntur mollitia",
+            date: "14 / 09 / 2024",
+        },
+        {
+            image: "http://placehold.it/240x180&text=old_news_1",
+            headline: "old news 3",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam iusto maxime doloribus quas ut consequuntur mollitia",
+            date: "7 / 09 / 2024",
         },
         {
             image: "http://placehold.it/250x160&text=old_news_2",
-            headline: "old news 2.",
+            headline: "old news 4",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam iusto maxime doloribus quas ut consequuntur mollitia",
-            date: "15 / 08 / 2024",
-
-        },
-        {
-            image: "http://placehold.it/250x160&text=old_news_2",
-            headline: "old news 3.",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam iusto maxime doloribus quas ut consequuntur mollitia",
-            date: "15 / 08 / 2024",
-
-        },
-        {
-            image: "http://placehold.it/250x160&text=old_news_2",
-            headline: "old news 4.",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam iusto maxime doloribus quas ut consequuntur mollitia",
-            date: "15 / 08 / 2024",
-
+            date: "03 / 09 / 2024",
         },
     ]
 

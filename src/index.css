@@ -159,7 +159,7 @@ hr {
     align-items: baseline;
     font-size: 18px;
     border: none;
-    background-color: rgba(74, 74, 74, 0.301);
+    background-color: rgba(74, 74, 74, 0.168);
     transition: 0.3s ease;
     border-radius: 7px;
 }
@@ -245,6 +245,16 @@ hr {
     }
 }
 
+.announcements{
+    padding: 30px 40px;
+}
+
+.content{
+    width: 100%;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: rgba(233, 233, 233, 0.278);
+}
 
 /* hero mediaquery */
 
@@ -390,6 +400,12 @@ hr {
     .aboutUs{
         padding: 40px 20px;
         gap: 15px;
+    }
+    .announcements{
+        padding: 20px;
+    }
+    .content{
+        padding: 20px;
     }
 }
 

@@ -5,7 +5,7 @@ import "../css/registrations.css"
 
 const Registrations = () => {
 
-    let ieiMembershipLink = ""
+    let ieiMembershipLink = "https://forms.gle/G55MJSm6u7znNqbu7"
     let currentEvents = [
         // {
         //     banner: "http://placehold.it/250x150&text=Event_Banner",

@@ -70,6 +70,17 @@ const Home = () => {
                 </div>
             </div>
 
+            <fieldset className="announcements">
+                <div className="content">
+                    <legend>Announcements</legend>
+                    <ul>
+                        <li>The registrations are open for 1st and 2nd year students</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusamus?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                </div>
+            </fieldset>
+
             <News />
             <Gallery />
 
