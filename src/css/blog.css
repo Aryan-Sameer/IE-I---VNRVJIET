@@ -1,0 +1,137 @@
+.blogList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.blog {
+    display: flex;
+    width: 75%;
+    padding: 25px;
+    gap: 25px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: rgba(233, 233, 233, 0.278);
+}
+
+.blog img{
+    max-width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.blog span, .blog small, .blog a {
+    font-weight: 500;
+    color: rgb(47, 47, 47);
+    text-decoration: none;
+    align-self: baseline;
+}
+
+.blog p {
+    margin: 10px 0px;
+}
+
+.blogDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.authorDetail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contest{
+    background-image: linear-gradient(#f4eeeb, #ebe7e4);
+    height: 50vh;
+    margin: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contestInfo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contest button{
+    background-color: #fff;
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.contest button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1120px){
+    .blog{
+        width: 85%;
+    }
+}
+@media (max-width: 1020px){
+    .blog{
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .blogList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog{
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    .blog img{
+        max-width: 100%;
+    }
+    .blog h3{
+        font-size: 24px;
+    }
+    .blog p{
+        text-align: justify;
+        font-size: 14px;
+    }
+    .blog span{
+        font-size: 0.8em;
+    }
+    .blog small{
+        font-size: 12px;
+    }
+    .contest button{
+        font-size: 12px;
+    }
+    .authorDetail{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .blogList{
+        grid-template-columns: 1fr;
+    }
+    .authorDetail{
+        flex-direction: row;
+    }
+    .blog h3{
+        font-size: 20px;
+    }
+    .blog p{
+        font-size: 12px;
+    }
+}

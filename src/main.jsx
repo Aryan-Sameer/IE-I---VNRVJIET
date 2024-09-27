@@ -10,6 +10,7 @@ import Registrations from './components/Registrations.jsx'
 
 import { createBrowserRouter } from 'react-router-dom'
 import Team from './components/Team.jsx'
+import Blog from './components/Blog.jsx'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/Team",
     element: <><Navbar /><Team /></>
+  },
+  {
+    path: "/Blog",
+    element: <><Navbar /><Blog /></>
   },
 ])
 

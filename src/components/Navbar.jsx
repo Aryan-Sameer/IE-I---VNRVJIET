@@ -23,20 +23,20 @@ const Navbar = () => {
       }
    }, [])
 
-   const handleScrollToGallery = () => {
-      navigate("/")
+   // const handleScrollToGallery = () => {
+   //    navigate("/")
 
-      setTimeout(() => {
-         const gallery = document.getElementById("gallery")
-         if (gallery) {
-            gallery.scrollIntoView({ behavior: "smooth" })
-         }
-      }, 100)
-   }
+   //    setTimeout(() => {
+   //       const gallery = document.getElementById("gallery")
+   //       if (gallery) {
+   //          gallery.scrollIntoView({ behavior: "smooth" })
+   //       }
+   //    }, 100)
+   // }
 
    const handleScrollToFooter = () => {
-      const footer = document.getElementById("footer")
-      footer.scrollIntoView({ behavior: "smooth" })
+      const contact = document.getElementById("contact")
+      contact.scrollIntoView({ behavior: "smooth" })
    }
 
    return (
@@ -49,8 +49,9 @@ const Navbar = () => {
             <div className='navLinks'>
                <ul>
                   <NavLink className={(e) => e.isActive ? "activePage" : ""} style={{ textDecoration: "none", margin: "0" }} to="/"><li>Home</li></NavLink>
-                  <li onClick={handleScrollToGallery}>Gallery</li>
+                  {/* <li onClick={handleScrollToGallery}>Gallery</li> */}
                   <NavLink className={(e) => e.isActive ? "activePage" : ""} style={{ textDecoration: "none", margin: "0" }} to="/Events"><li>Events</li></NavLink>
+                  <NavLink className={(e) => e.isActive ? "activePage" : ""} style={{ textDecoration: "none", margin: "0" }} to="/Blog"><li>Blog</li></NavLink>
                   <NavLink className={(e) => e.isActive ? "activePage" : ""} style={{ textDecoration: "none", margin: "0" }} to="/Registrations"><li>Registrations</li></NavLink>
                   <li onClick={handleScrollToFooter}>Contact</li>
                </ul>
