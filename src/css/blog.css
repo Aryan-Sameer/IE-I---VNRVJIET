@@ -119,6 +119,9 @@
     .authorDetail{
         flex-direction: column;
     }
+    .contest{
+        margin: 20px 30px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -133,5 +136,8 @@
     }
     .blog p{
         font-size: 12px;
+    }
+    .contest{
+        margin: 20px;
     }
 }
