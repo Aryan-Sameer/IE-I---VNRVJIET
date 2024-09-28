@@ -406,13 +406,12 @@ hr {
     .content{
         padding: 20px;
     }
+    .content ul{
+        padding-left: 16px;
+    }
 }
 
 @media (max-width: 436px){
-    /* .aboutUs{
-        padding: 40px 20px;
-        gap: 15px;
-    } */
     .stats, .aboutImg img{
         width: 100%;
     }
