@@ -4,6 +4,9 @@ import "../css/blog.css"
 const Blog = () => {
 
     let isContestThere = true
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const blogs = [
         {
