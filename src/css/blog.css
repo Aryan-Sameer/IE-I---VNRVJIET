@@ -16,7 +16,7 @@
 }
 
 .blog img{
-    max-width: 40%;
+    min-width: 40%;
     border-radius: 10px;
     object-fit: cover;
 }
