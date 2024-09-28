@@ -69,7 +69,7 @@ const Team = () => {
         },
         {
             id: 10,
-            image: "http://placehold.it/150x150",
+            image: "public/static/core team/dhawan.jpg",
             name: "R Dhawan Kumar",
             position: "Design Head",
             email: "dhawanxxx22@gmail.com"
@@ -90,7 +90,7 @@ const Team = () => {
         },
         {
             id: 13,
-            image: "http://placehold.it/150x150",
+            image: "public/static/core team/supriya.jpg",
             name: "Mamidi Supriya",
             position: "Social Media Coordinator",
             email: "mamidisupriya293@gmail.com"
