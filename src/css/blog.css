@@ -121,6 +121,9 @@
     .contest{
         margin: 20px 30px;
     }
+    .blogDesc{
+        height: 100%;
+    }
 }
 
 @media (max-width: 576px) {
