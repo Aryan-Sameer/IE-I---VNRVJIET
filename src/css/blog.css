@@ -62,7 +62,7 @@
 }
 
 .contest button{
-    background-color: #fff;
+    background-color: transparent;
     padding: 5px 15px;
     border: 2px solid black;
     border-radius: 10px;
