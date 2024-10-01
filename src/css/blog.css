@@ -1,4 +1,4 @@
-.blogList{
+.blogList {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,13 +15,15 @@
     background-color: rgba(233, 233, 233, 0.278);
 }
 
-.blog img{
+.blog img {
     min-width: 40%;
     border-radius: 10px;
     object-fit: cover;
 }
 
-.blog span, .blog small, .blog a {
+.blog span,
+.blog small,
+.blog a {
     font-weight: 500;
     color: rgb(47, 47, 47);
     text-decoration: none;
@@ -39,12 +41,12 @@
     justify-content: space-between;
 }
 
-.authorDetail{
+.authorDetail {
     display: flex;
     justify-content: space-between;
 }
 
-.contest{
+.contest {
     background-image: linear-gradient(#f4eeeb, #ebe7e4);
     height: 50vh;
     margin: 20px 40px;
@@ -54,14 +56,14 @@
     align-items: center;
 }
 
-.contestInfo{
+.contestInfo {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.contest button{
+.contest button {
     background-color: transparent;
     padding: 5px 15px;
     border: 2px solid black;
@@ -69,74 +71,88 @@
     transition: 0.2s ease;
     font-weight: 500;
     width: fit-content;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
 }
 
-.contest button:hover{
-    background-color: black;
-    color: white;
-}
-
-@media (max-width: 1120px){
-    .blog{
+@media (max-width: 1120px) {
+    .blog {
         width: 85%;
     }
 }
-@media (max-width: 1020px){
-    .blog{
+
+@media (max-width: 1020px) {
+    .blog {
         width: 100%;
     }
 }
 
 @media (max-width: 760px) {
-    .blogList{
+    .blogList {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .blog{
+
+    .blog {
         flex-direction: column;
         padding: 15px;
         gap: 15px;
     }
-    .blog img{
+
+    .blog img {
         max-width: 100%;
     }
-    .blog h3{
+
+    .blog h3 {
         font-size: 24px;
     }
-    .blog p{
+
+    .blog p {
         font-size: 14px;
     }
-    .blog span{
+
+    .blog span {
         font-size: 0.8em;
     }
-    .blog small{
+
+    .blog small {
         font-size: 12px;
     }
-    .contest button{
+
+    .contest button {
         font-size: 12px;
     }
-    .authorDetail{
+
+    .authorDetail {
         flex-direction: column;
     }
-    .contest{
+
+    .contest {
         margin: 20px 30px;
     }
-    .blogDesc{
+
+    .blogDesc {
         height: 100%;
     }
 }
 
 @media (max-width: 576px) {
-    .blogList{
+    .blogList {
         grid-template-columns: 1fr;
     }
-    .authorDetail{
+
+    .authorDetail {
         flex-direction: row;
     }
-    .blog h3{
+
+    .blog h3 {
         font-size: 20px;
     }
-    .contest{
+
+    .contest {
         margin: 20px;
     }
 }

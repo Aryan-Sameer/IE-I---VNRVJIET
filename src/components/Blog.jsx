@@ -4,7 +4,7 @@ import "../css/blog.css"
 
 const Blog = () => {
 
-    let isContestThere = false
+    let isContestThere = true
 
     useEffect(() => {
         window.scrollTo(0, 0);

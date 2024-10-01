@@ -27,6 +27,18 @@ footer {
     background-color: transparent;
     border: 1px solid white;
     transition: 0.2s ease;
+
+    &:hover>a .locationRkt {
+        color: rgb(104, 0, 21);
+    }
+
+    &:hover>a {
+        color: black;
+    }
+
+    &:hover {
+        background-color: white;
+    }
 }
 
 .locationBtn a {
@@ -39,19 +51,6 @@ footer {
     color: white;
 }
 
-
-.locationBtn:hover>a .locationRkt {
-    color: rgb(104, 0, 21);
-}
-
-.locationBtn:hover>a {
-    color: black;
-}
-
-.locationBtn:hover {
-    background-color: white;
-}
-
 .mailId {
     font-size: 24px;
 }
@@ -60,10 +59,10 @@ footer {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.859);
     text-decoration: none;
-}
 
-.sendMail:hover{
-    color: white;
+    &:hover{
+        color: white;
+    }
 }
 
 .social {
@@ -74,10 +73,10 @@ footer {
 
 .social a {
     color: rgba(255, 255, 255, 0.859);
-}
 
-.social a:hover {
-    color: white;
+    &:hover {
+        color: white;
+    }
 }
 
 .rightFoot {

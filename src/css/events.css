@@ -15,6 +15,28 @@
     border: none;
     transition: 0.4s transform ease;
     border-radius: 5px 5px 0px 0px;
+    
+    &:hover {
+        z-index: 1;
+        transform: scale(1.1);
+        background-color: rgb(251, 251, 251);
+        box-shadow: 0px -1px 4px -1px rgb(156, 156, 156);
+    }
+    
+    &:hover>.eventPoster {
+        border-radius: 5px 5px 0px 0px;
+        filter: brightness(0.85);
+    }
+
+    &:hover>.eventTitle {
+        padding: 0px 7px;
+    }
+
+    &:hover>.eventDesc {
+        display: block;
+        background-color: rgb(251, 251, 251);
+        box-shadow: 0px 2px 4px -2px rgb(156, 156, 156);
+    }
 }
 
 .eventPoster {
@@ -40,86 +62,73 @@
     border-radius: 0px 0px 5px 5px;
 }
 
-.card:hover{
-    z-index: 1;
-    transform: scale(1.1);
-    background-color: rgb(251, 251, 251);
-    box-shadow: 0px -1px 4px -1px rgb(156, 156, 156);
-}
-
-.card:hover>.eventPoster {
-    border-radius: 5px 5px 0px 0px;
-    filter: brightness(0.85);
-}
-
-.card:hover>.eventTitle {
-    padding: 0px 7px;
-}
-
-.card:hover>.eventDesc {
-    display: block;
-    background-color: rgb(251, 251, 251);
-    box-shadow: 0px 2px 4px -2px rgb(156, 156, 156);
-}
-
-.brief{
+.brief {
     width: 70%;
     text-align: center;
     margin: 30px auto;
 }
 
-.brief h3, .brief p{
+.brief h3,
+.brief p {
     margin: 0;
 }
 
-@media (max-width: 1050px){
-    .brief{
+@media (max-width: 1050px) {
+    .brief {
         width: 90%;
     }
+
     .cardContainer {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         column-gap: 30px;
     }
-    .card:hover{
+
+    .card:hover {
         transform: scale(1.2);
         transition: 0.2s ease;
     }
+
     .eventDesc {
         font-size: 12px;
     }
 }
 
-@media (max-width: 768px){
-    .brief{
+@media (max-width: 768px) {
+    .brief {
         width: 100%;
     }
-    .brief p{
+
+    .brief p {
         font-size: 0.9em;
     }
+
     .card h5 {
         font-size: 1.1em;
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .cardContainer {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         column-gap: 20px;
     }
+
     .card h5 {
         font-size: 1.0em;
     }
 }
 
-@media (max-width: 473px){
+@media (max-width: 473px) {
     .cardContainer {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         column-gap: 15px;
     }
-    .brief p{
+
+    .brief p {
         font-size: 0.8em;
         text-align: justify;
     }
+
     .eventDesc {
         font-size: 10px;
     }
