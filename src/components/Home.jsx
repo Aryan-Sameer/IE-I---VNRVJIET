@@ -4,6 +4,7 @@ import Gallery from './Gallery'
 import Navbar from './Navbar'
 import { useEffect } from 'react'
 import { IoIosArrowForward } from "react-icons/io";
+import { IoMdMegaphone } from "react-icons/io";
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -78,7 +79,7 @@ const Home = () => {
 
             {announcements.length != 0 && <fieldset className="announcements">
                 <div className="content">
-                    <legend>Announcements</legend>
+                    <legend><IoMdMegaphone /> Announcements</legend>
                     <ul>
                         {announcements.map((item) => {
                             return (
