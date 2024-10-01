@@ -71,7 +71,7 @@ const Gallery = () => {
     const handleClick = (e) => {
         const fullSrc = e.target.src
         const relativeSrc = fullSrc.split(window.location.origin)[1]
-        setIndex(gallery.images.indexOf(relativeSrc))
+        setIndex(gallery.images.indexOf(relativeSrc.replaceAll("%20", " ")))
         setOverlay(true);
     };
 
