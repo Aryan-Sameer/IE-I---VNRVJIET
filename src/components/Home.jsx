@@ -79,7 +79,7 @@ const Home = () => {
 
             {announcements.length != 0 && <fieldset className="announcements">
                 <div className="content">
-                    <legend><IoMdMegaphone /> Announcements</legend>
+                    <legend><span className='megaPhone'><IoMdMegaphone /></span> Announcements</legend>
                     <ul>
                         {announcements.map((item) => {
                             return (
