@@ -69,9 +69,11 @@ const Gallery = () => {
     }
 
     const handleClick = (e) => {
-        setIndex(gallery.images.indexOf(e.target.src))
-        setOverlay(true)
-    }
+        const fullSrc = e.target.src
+        const relativeSrc = fullSrc.split(window.location.origin)[1]
+        setIndex(gallery.images.indexOf(relativeSrc))
+        setOverlay(true);
+    };
 
     const handleNext = () => {
         if (index < gallery.images.length - 1) {
