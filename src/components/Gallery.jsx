@@ -69,7 +69,7 @@ const Gallery = () => {
     }
 
     const handleClick = (e) => {
-        setIndex(gallery.images.indexOf(e.target.src.split("http://localhost:5173")[1].replaceAll("%20", " ")))
+        setIndex(gallery.images.indexOf(e.target.src))
         setOverlay(true)
     }
 
