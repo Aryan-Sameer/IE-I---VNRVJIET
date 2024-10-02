@@ -155,13 +155,11 @@ hr {
     background-color: #fff;
     margin: 10px 0px;
     padding: 0px 6px;
-    display: flex;
-    align-items: baseline;
     font-size: 18px;
-    border: none;
-    background-color: rgba(74, 74, 74, 0.168);
+    border: 2px solid black;
     transition: 0.3s ease;
-    border-radius: 7px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .teamArrow{
