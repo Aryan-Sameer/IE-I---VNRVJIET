@@ -47,8 +47,11 @@
 }
 
 .contest {
-    background-image: linear-gradient(#f4eeeb, #ebe7e4);
-    height: 50vh;
+    background-image: url("https://www.gdata.in/images/blog-images/blog-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
     margin: 20px 40px;
     border-radius: 10px;
     display: flex;
@@ -57,24 +60,30 @@
 }
 
 .contestInfo {
+    color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: rgba(255, 255, 255, 0.156);
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 0px 0px 4px rgba(39, 39, 39, 0.251);
 }
 
 .contest button {
     background-color: transparent;
     padding: 5px 15px;
-    border: 2px solid black;
+    border: 2px solid white;
+    color: white;
     border-radius: 10px;
     transition: 0.2s ease;
     font-weight: 500;
     width: fit-content;
 
     &:hover {
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
     }
 }
 
@@ -90,7 +99,7 @@
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 860px) {
     .blogList {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -132,6 +141,7 @@
 
     .contest {
         margin: 20px 30px;
+        background-position: 60%;
     }
 
     .blogDesc {
