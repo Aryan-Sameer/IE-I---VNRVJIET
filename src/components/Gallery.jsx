@@ -57,7 +57,7 @@ const Gallery = () => {
             setmaxVid(gallery.videos.length)
         }
         else {
-            setmaxImg(8)
+            setmaxImg(12)
             setmaxVid(5)
         }
 
