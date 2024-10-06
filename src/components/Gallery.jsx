@@ -44,7 +44,7 @@ const Gallery = () => {
     }
 
     const [showMoreImages, setShowMoreImages] = useState(false)
-    const [maxImg, setmaxImg] = useState(8)
+    const [maxImg, setmaxImg] = useState(12)
     const [maxVid, setmaxVid] = useState(5)
     const [overlay, setOverlay] = useState(false)
     const [index, setIndex] = useState(0)
