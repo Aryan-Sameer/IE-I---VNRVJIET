@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import { IoIosArrowForward } from "react-icons/io";
 import { IoMdMegaphone } from "react-icons/io";
 import { Link } from 'react-router-dom'
+import Card from 'react-bootstrap/Card';
 
 const Home = () => {
 
@@ -20,9 +21,9 @@ const Home = () => {
         about.scrollIntoView({ behavior: "smooth" })
     }
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
 
     return (
         <main>
@@ -92,6 +93,66 @@ const Home = () => {
 
             <News />
             <Gallery />
+
+            <div className="alumni">
+                <h2 className="headings">Our Alumni</h2>
+                <div className="alumniList">
+                    <Card className='alumniCard' >
+                        <Card.Img variant="top" src="http://placehold.it/200x150" />
+                        <Card.Body className='alumniBody'>
+                            <Card.Title>Alumni-1 <small className='text-secondary'>batch</small></Card.Title>
+                            <Card.Text>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className='alumniCard' >
+                        <Card.Img variant="top" src="http://placehold.it/200x150" />
+                        <Card.Body className='alumniBody'>
+                            <Card.Title>Alumni-2 <small className='text-secondary'>batch</small></Card.Title>
+                            <Card.Text>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className='alumniCard' >
+                        <Card.Img variant="top" src="http://placehold.it/200x150" />
+                        <Card.Body className='alumniBody'>
+                            <Card.Title>Alumni-3 <small className='text-secondary'>batch</small></Card.Title>
+                            <Card.Text>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className='alumniCard' >
+                        <Card.Img variant="top" src="http://placehold.it/200x150" />
+                        <Card.Body className='alumniBody'>
+                            <Card.Title>Alumni-4 <small className='text-secondary'>batch</small></Card.Title>
+                            <Card.Text>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className='alumniCard' >
+                        <Card.Img variant="top" src="http://placehold.it/200x150" />
+                        <Card.Body className='alumniBody'>
+                            <Card.Title>Alumni-5 <small className='text-secondary'>batch</small></Card.Title>
+                            <Card.Text>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className='alumniCard' >
+                        <Card.Img variant="top" src="http://placehold.it/200x150" />
+                        <Card.Body className='alumniBody'>
+                            <Card.Title>Alumni-6 <small className='text-secondary'>batch</small></Card.Title>
+                            <Card.Text>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </div>
+            </div>
 
         </main>
     )

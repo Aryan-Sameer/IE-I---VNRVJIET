@@ -125,7 +125,7 @@ const Team = () => {
     return (
         <main className='canvas'>
             <h2 style={{ textAlign: "center" }} className='headings'>Our Team</h2>
-            <hr />
+            <hr className='teamLine'/>
             <div className="ourTeam">
                 {members.map((item) => {
                     return (

@@ -22,28 +22,12 @@
 
 .banner img{
     width: 100%;
-}
 
-.banner img:hover{
-    filter: brightness(0.8);
+    &:hover{
+        filter: brightness(0.8);
+    }
 }
 
 .noEvents{
     color: rgb(115, 115, 115);
-}
-
-.whyUs{
-    padding: 30px 0px;
-}
-
-@media (max-width: 700px){
-    .whyUs p{
-        line-height: 20px;
-    }
-}
-
-@media (max-width: 590px){
-    .whyUs p{
-        text-align: justify;
-    }
 }

@@ -2,10 +2,11 @@ import React from 'react'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import "../css/registrations.css"
+import Accordion from 'react-bootstrap/Accordion';
 
 const Registrations = () => {
 
-    let ieiMembershipLink = "https://forms.gle/G55MJSm6u7znNqbu7"
+    let ieiMembershipLink = ""
     let currentEvents = [
         // {
         //     banner: "http://placehold.it/250x150&text=Event_Banner",
@@ -15,7 +16,7 @@ const Registrations = () => {
     ]
 
     ////////////////////////////////////////////////////////////////////////
-    
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -40,11 +41,6 @@ const Registrations = () => {
     return (
         <div className='canvas'>
 
-            <div className="whyUs">
-                <h3>Why IE(I) Membership?</h3>
-                <p>You can get free access to hackathons, workshops, enjoyable events, and other resources by being a member of the IEI community. It's an excellent chance to meet other like-minded students, obtain practical experience, and develop your abilities through the many interesting events the IEI chapter offers.</p>
-            </div>
-
             {openRegistration ? <div className="membership">
                 <h3 className='open'>IEI MEMBERSHIP IS OPEN!</h3>
                 <p>Click <Link target='_blank' to={ieiMembershipLink}>here</Link> to register</p>
@@ -66,6 +62,40 @@ const Registrations = () => {
 
             </div>
             {eventregitration || <h3 className='noEvents'>No events currrently!</h3>}
+
+            <Accordion className='my-5' defaultActiveKey="0">
+                <h2 className='headings'>FAQs</h2>
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header>Why IE(I) Membership?</Accordion.Header>
+                    <Accordion.Body>
+                    You can get free access to hackathons, workshops, enjoyable events, and other resources by being a member of the IEI community. It's an excellent chance to meet other like-minded students, obtain practical experience, and develop your abilities through the many interesting events the IEI chapter offers.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                    <Accordion.Header>What is IE(I)?</Accordion.Header>
+                    <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                    <Accordion.Header>What events does IE(I) conduct?</Accordion.Header>
+                    <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
 
         </div>
     )

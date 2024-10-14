@@ -150,7 +150,7 @@ hr {
     flex-direction: column;
 }
 
-.ourTeamBtn{
+.ourTeamBtn {
     justify-self: flex-start;
     background-color: #fff;
     margin: 10px 0px;
@@ -162,16 +162,16 @@ hr {
     display: inline-block;
 }
 
-.teamArrow{
+.teamArrow {
     font-size: 22px;
     transition: 0.3s ease;
 }
 
-.ourTeamBtn:hover{
+.ourTeamBtn:hover {
     border-radius: 0px 20px 20px 0px;
 }
 
-.ourTeamBtn:hover > .teamArrow{
+.ourTeamBtn:hover>.teamArrow {
     margin-left: 15px;
 }
 
@@ -243,18 +243,18 @@ hr {
     }
 }
 
-.announcements{
+.announcements {
     padding: 30px 40px;
 }
 
-.content{
+.content {
     width: 100%;
     padding: 20px 40px;
     border-radius: 10px;
     background-color: rgba(233, 233, 233, 0.278);
 }
 
-.megaPhone{
+.megaPhone {
     font-size: 28px;
     display: inline-block;
     animation: ring 1s infinite linear;
@@ -262,187 +262,266 @@ hr {
 }
 
 @keyframes ring {
-    0%{
+    0% {
         transform: rotate(20)
     }
-    20%{
+
+    20% {
         transform: rotate(-20deg)
     }
-    40%{
+
+    40% {
         transform: rotate(20deg)
     }
-    60%{
+
+    60% {
         transform: rotate(-20deg)
     }
-    80%{
+
+    80% {
         transform: rotate(20deg)
     }
-    100%{
+
+    100% {
         transform: rotate(-20)
     }
 }
 
+.alumni {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.alumniList img {
+    border-radius: 5px;
+}
+
+.alumniList{
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.alumniBody {
+    padding: 10px 0px;
+}
+
+.alumni .alumniCard:hover {
+    transform: scale(1);
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
 /* hero mediaquery */
 
-@media (max-width: 1015px){
-    .hero{
+@media (max-width: 1015px) {
+    .hero {
         height: max-content;
     }
-    .welcome{
+
+    .welcome {
         flex-direction: column-reverse;
         height: fit-content;
         padding: 40px 0px;
         gap: 20px;
     }
-    .intro{
+
+    .intro {
         width: 100%;
     }
-    .ieiLogo{
+
+    .ieiLogo {
         width: 100%;
     }
-    .ieiLogo img{
+
+    .ieiLogo img {
         width: 30%;
     }
 }
 
-@media (max-width: 760px){
-    .hero{
+@media (max-width: 760px) {
+
+    .hero,
+    .alumni {
         margin: 30px;
     }
-    .ieiLogo img{
+
+    .ieiLogo img {
         width: 35%;
     }
-    .intro{
+
+    .intro {
         padding: 30px;
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
 
-    .intro h2{
+    .intro h2 {
         font-size: 20px;
     }
-    .intro h1{
+
+    .intro h1 {
         font-size: 28px;
     }
-    .hero{
+
+    .hero,
+    .alumni {
         margin: 20px;
     }
-    .intro{
+
+    .intro {
         padding: 20px;
     }
-    .explore{
+
+    .explore {
         font-size: 14px;
     }
-    .ieiLogo img{
+
+    .ieiLogo img {
         width: 40%;
     }
 }
-@media (max-width: 428px){
-    .intro h2{
+
+@media (max-width: 428px) {
+    .intro h2 {
         font-size: 16px;
     }
-    .intro h1{
+
+    .intro h1 {
         font-size: 24px;
     }
 }
 
 /* about us mediaquery */
 
-@media (max-width: 1100px){
-    .aboutUs{
+@media (max-width: 1100px) {
+    .aboutUs {
         height: max-content;
     }
-    .aboutInfo{
+
+    .aboutInfo {
         width: 55%;
         text-align: justify;
     }
-    .aboutImg{
+
+    .aboutImg {
         width: 45%;
     }
-    .aboutImg img, .stats{
+
+    .aboutImg img,
+    .stats {
         width: 80%;
     }
 }
 
-@media (max-width: 1000px){
-    .aboutInfo{
+@media (max-width: 1000px) {
+    .aboutInfo {
         line-height: 25px;
     }
 }
 
-@media (max-width: 900px){
-    .aboutImg img{
+@media (max-width: 900px) {
+    .aboutImg img {
         width: 90%;
     }
-    .stats{
+
+    .stats {
         width: 90%;
     }
-    .aboutInfo{
+
+    .aboutInfo {
         line-height: 20px;
     }
 }
-@media (max-width: 800px){
-    .aboutUs{
+
+@media (max-width: 800px) {
+    .aboutUs {
         flex-direction: column;
         padding: 40px;
     }
-    .aboutInfo{
+
+    .aboutInfo {
         width: 100%;
     }
-    .aboutImg{
+
+    .aboutImg {
         width: 100%;
         margin: 10px 0px;
     }
-    .stats h2{
+
+    .stats h2 {
         font-size: 26px;
     }
-    .stats span{
+
+    .stats span {
         font-size: 12px;
     }
-    .aboutImg img, .stats{
+
+    .aboutImg img,
+    .stats {
         margin: 0px auto;
         width: 60%;
     }
-    .ourTeamBtn{
+
+    .ourTeamBtn {
         font-size: 14px;
     }
-    .teamArrow{
+
+    .teamArrow {
         font-size: 18px;
     }
 }
 
-@media (max-width: 660px){
-    .aboutImg img, .stats{
+@media (max-width: 660px) {
+
+    .aboutImg img,
+    .stats {
         width: 85%;
     }
-    .aboutInfo p{
+
+    .aboutInfo p {
         margin: 0;
         text-align: left;
     }
 }
 
-@media (max-width: 576px){
-    .aboutUs{
+@media (max-width: 576px) {
+    .aboutUs {
         padding: 40px 20px;
         gap: 15px;
     }
-    .announcements{
+
+    .announcements {
         padding: 20px;
     }
-    .content{
+
+    .content {
         padding: 20px;
     }
-    .content ul{
+
+    .content ul {
         padding-left: 16px;
+    }
+
+    .teamLine{
+        margin: 20px;
     }
 }
 
-@media (max-width: 436px){
-    .stats, .aboutImg img{
+@media (max-width: 436px) {
+
+    .stats,
+    .aboutImg img {
         width: 100%;
     }
-    .aboutInfo p{
+
+    .aboutInfo p {
         margin: 0;
     }
 }

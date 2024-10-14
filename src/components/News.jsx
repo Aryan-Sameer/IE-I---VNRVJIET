@@ -56,8 +56,10 @@ const News = () => {
                             <div className="oldNews">
                                 <img src={item.image} alt="" />
                                 <div className="oldDetail">
-                                    <h5>{item.headline}</h5>
-                                    <p>{item.description}</p>
+                                    <div className="top">
+                                        <h5>{item.headline}</h5>
+                                        <p>{item.description}</p>
+                                    </div>
                                     <span>{item.date}</span>
                                 </div>
                             </div>

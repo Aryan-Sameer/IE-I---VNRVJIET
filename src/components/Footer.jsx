@@ -32,9 +32,8 @@ const Footer = () => {
 
                         <h3 id='contact' className='headings' style={{ marginTop: "0" }}>Contact</h3>
                         <p>
-                            VNR Vignana Jyothi Institute of Eng. and Tech.
+                            Address: VNR Vignana Jyothi Institute of Eng. and Tech.
                             Pragathi Nagar,Nizampet,Hyderabad 500090
-                            For any queries regarding registrations
                         </p>
                     </div>
                     <div className="left2">
