@@ -16,6 +16,45 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur.",
     ]
 
+    const alumni = [
+        {
+            image: "http://placehold.it/200x150",
+            name: "alumni 1",
+            batch: "batch no.",
+            experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!"
+        },
+        {
+            image: "http://placehold.it/200x150",
+            name: "alumni 2",
+            batch: "batch no.",
+            experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!"
+        },
+        {
+            image: "http://placehold.it/200x150",
+            name: "alumni 3",
+            batch: "batch no.",
+            experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!"
+        },
+        {
+            image: "http://placehold.it/200x150",
+            name: "alumni 4",
+            batch: "batch no.",
+            experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!"
+        },
+        {
+            image: "http://placehold.it/200x150",
+            name: "alumni 5",
+            batch: "batch no.",
+            experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!"
+        },
+        {
+            image: "http://placehold.it/200x150",
+            name: "alumni 6",
+            batch: "batch no.",
+            experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!"
+        },
+    ]
+
     const handleExplore = () => {
         const about = document.getElementById("about")
         about.scrollIntoView({ behavior: "smooth" })
@@ -97,60 +136,23 @@ const Home = () => {
             <div className="alumni">
                 <h2 className="headings">Our Alumni</h2>
                 <div className="alumniList">
-                    <Card className='alumniCard' >
-                        <Card.Img variant="top" src="http://placehold.it/200x150" />
-                        <Card.Body className='alumniBody'>
-                            <Card.Title>Alumni-1 <small className='text-secondary'>batch</small></Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card className='alumniCard' >
-                        <Card.Img variant="top" src="http://placehold.it/200x150" />
-                        <Card.Body className='alumniBody'>
-                            <Card.Title>Alumni-2 <small className='text-secondary'>batch</small></Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card className='alumniCard' >
-                        <Card.Img variant="top" src="http://placehold.it/200x150" />
-                        <Card.Body className='alumniBody'>
-                            <Card.Title>Alumni-3 <small className='text-secondary'>batch</small></Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card className='alumniCard' >
-                        <Card.Img variant="top" src="http://placehold.it/200x150" />
-                        <Card.Body className='alumniBody'>
-                            <Card.Title>Alumni-4 <small className='text-secondary'>batch</small></Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card className='alumniCard' >
-                        <Card.Img variant="top" src="http://placehold.it/200x150" />
-                        <Card.Body className='alumniBody'>
-                            <Card.Title>Alumni-5 <small className='text-secondary'>batch</small></Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card className='alumniCard' >
-                        <Card.Img variant="top" src="http://placehold.it/200x150" />
-                        <Card.Body className='alumniBody'>
-                            <Card.Title>Alumni-6 <small className='text-secondary'>batch</small></Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid magnam odio iusto explicabo ullam voluptatibus vel dolor! In, eius!
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+
+                    {alumni.map((item) => {
+                        return (
+                            <Card key={item.name} className='alumniCard' >
+                                <Card.Img className='alumniImg' variant="top" src={item.image} />
+                                <Card.Body className='alumniBody'>
+                                    <Card.Title>{item.name} <small className='text-secondary'>{item.batch}</small></Card.Title>
+                                    <Card.Text>
+                                        {item.experience}
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        )
+                    })}
+
+
+
                 </div>
             </div>
 

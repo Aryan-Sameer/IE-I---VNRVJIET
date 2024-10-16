@@ -512,6 +512,28 @@ hr {
     .teamLine{
         margin: 20px;
     }
+    .alumniList{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .alumniCard{
+        flex-direction: row;
+    }
+
+    .alumniCard{
+        flex-direction: row;
+    }
+
+    .alumniCard .alumniBody{
+        padding: 0px 10px;
+    }
+
+    .alumniCard .alumniImg{
+        max-width: 30%;
+    }
+
 }
 
 @media (max-width: 436px) {
